@@ -1,0 +1,1 @@
+{"mappings":"ACCA,QAAQ,GAAG,CAAC","sources":["<anon>","src/app.js"],"sourcesContent":["const nombre = \"world\";\nconsole.log(`Hello ${nombre}`);\n\n//# sourceMappingURL=index.dd3c239e.js.map\n","const nombre = 'world';\r\nconsole.log(`Hello ${nombre}`);"],"names":["console","log"],"version":3,"file":"index.dd3c239e.js.map"}
