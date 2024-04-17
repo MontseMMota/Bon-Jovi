@@ -1,0 +1,14 @@
+.button {
+    padding: 0.6em;
+    color: $color-text;
+    background: linear-gradient(to bottom, $color-secondary, $color-primary-accent);
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+        background: $color-secondary;
+    }
+}
+

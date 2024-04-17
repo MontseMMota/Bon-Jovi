@@ -1,0 +1,60 @@
+@import "../abstracts/variables";
+@import '../abstracts/mixins';
+
+@include encabezados(2em);
+@media(min-width: 800px) {
+  @include encabezados(2.3em);
+}
+@media(min-width: 1200px) {
+  @include encabezados(2.5em);
+}
+
+
+h1 {
+    background-color: $color-secondary;
+    letter-spacing: 2px;
+    font-family:$font-family;
+    font-weight: bold;
+    color: $color-primary-accent;
+}
+
+h3 {
+    font-family: $font-family-serif;
+}
+
+p {
+    color: $color-text;
+}
+
+a {
+  color: $color-text;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+
+  &:before {
+    content: '• ';
+  }
+}
+
+ul, li {
+  margin-bottom: 15px;
+  padding-left: 20px;
+
+}
+
+ol li{
+  color: $color-text;
+  padding-top: 1em;
+}
+
+ol {
+  font-weight: bold;
+}
+
+
+
+
+

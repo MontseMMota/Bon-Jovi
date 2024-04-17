@@ -6,21 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bon Jovi</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    
 </head>
 
-<body>
+<body class="home">
+    <include src="src/views/header_index.html"></include>
 
-    <h1>Bon Jovi</h1>
-    <nav>
-        <ul>
-            <li>Categoría</li>
-            <li>Presentación</li>
-            <li>Enlaces</li>
-        </ul>
-    </nav>
 
-    <include src="src/footer.html"></include>
-    <script src="app.js"></script>
+    <section class="mosaic-section">
+        <div class="mosaic-card">
+            <img src="./assets/images/bon-jovi-band.jpg" alt="Grupo Bon Jovi" class="card-photo">
+            <div class="mosaic-content">
+                <h3 class="card-title">Bon Jovi, más que un vocalista</h3>
+                <p class="card-description">Pese a lo que mucha gente cree, Bon Jovi no es sólo una voz rasgada con una melena rubia que aún se conserva a los 62 años del cantante... </p>
+                <button class="button" id="button"><a href="categoria.html">Saber más...</a></button>
+            </div>
+
+        </div>
+        <div class="mosaic-card">
+            <img src="./assets/images/bon-jovi-origen.jpg" alt="Grupo Bon Jovi" class="card-photo">
+            <div class="mosaic-content">
+                <h3 class="card-title">Bon Jovi, el origen</h3>
+                <p class="card-description">La banda se formó en 1983 en Sayreville, Nueva Jersey, con Jon Bon Jovi como vocalista principal y líder. Antes de la llegada...</p>
+                <button class="button" id="button">Saber más...</button>
+            </div>
+
+        </div>
+        <div class="mosaic-card">
+            <img src="./assets/images/bon-jovi-blaze-of-glory.jpg" alt="Grupo Bon Jovi" class="card-photo">
+            <div class="mosaic-content">
+                <h3 class="card-title">De los escenarios a la gran pantalla</h3>
+                <p class="card-description">La gran ambición del vocalista del grupo, Jon Bon Jovi, le llevó a lanzarse en solitario a la composición de la BSO de Young Guns 2...</p>
+                <button class="button" id="button">Saber más...</button>
+            </div>
+
+        </div>
+        <div class="mosaic-card">
+            <img src="./assets/images/bon-jovi-concierto.jpg" alt="Grupo Bon Jovi" class="card-photo">
+            <div class="mosaic-content">
+                <h3 class="card-title">Conciertos y campanas de gira 2024</h3>
+                <p class="card-description">El grupo musical tuvo su gran primera aparición como teloneros de ZZ Top en el Madison Square Garden,... </p>
+                <button class="button" id="button">Saber más...</button>
+            </div>
+
+        </div>
+        <div class="mosaic-card">
+            <img src="./assets/images/bon-jovi-slippery.jpg" alt="Grupo Bon Jovi" class="card-photo">
+            <div class="mosaic-content">
+                <h3 class="card-title">CAUTION, Slippery When Wet</h3>
+                <p class="card-description">Para muchos, slippery when wet es simplemente un cartel para estar atentos al suelo, para Bon Jovi fue el CD que lo catapultaría directamente... </p>
+                <button class="button" id="button">Saber más...</button>
+            </div>
+
+        </div>
+
+        <div class="mosaic-card">
+            <img src="./assets/images/bon-jovi-sambora.jpg" alt="Grupo Bon Jovi" class="card-photo">
+            <div class="mosaic-content">
+                <h3 class="card-title">Richie Sambora: dos hombres y dos destinos</h3>
+                <p class="card-description">Desde los inicios de la banda, la química entre Jon y Richie fue palpable. Juntos han escrito algunas de las canciones más icónicas de Bon Jovi... </p>
+                <button class="button" id="button"><a href="detalle.html">Saber más...</a></button>
+            </div>
+
+        </div>
+    </section>
+    
+    
+
+
+
+
+    <include src="src/views/footer.html"></include>
+    <script type="module" src="./assets/scripts/app.js"></script>
 </body>
 
 </html>
