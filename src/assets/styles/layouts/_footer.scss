@@ -1,0 +1,25 @@
+footer {
+    background-color: #ffc60b;
+    justify-content: center;
+    margin-top: 4em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+  
+      }
+}
+
+footer ul {
+    display:flex;
+    list-style: none;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+  
+      }
+}

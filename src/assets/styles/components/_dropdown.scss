@@ -1,0 +1,22 @@
+.dropdown {
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    @extend .button; 
+  }
+  
+  .dropdown-content {
+    display: none;
+    min-width: 160px;
+
+    & ol{
+        list-style: none;
+    }
+  }
+  
+  
+  
+  .show {
+    display: block;
+  }

@@ -31,7 +31,11 @@ a {
   text-decoration: none;
 }
 
-ul li {
+.category-main a {
+  color: $color-primary-accent;
+}
+
+ol ul li {
   list-style: none;
 
   &:before {
