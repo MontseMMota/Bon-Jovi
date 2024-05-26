@@ -4,32 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Presentación en detalle del contenido de la página web de Bon Jovi.">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo-bon-jovi.svg">
+    <link rel="alternate icon" type="image/png" href="assets/images/logo-bon-jovi.png">
     <title>Presentación Bon Jovi</title>
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
 </head>
 <body>
-    <include src="src/views/header.html"></include>
+    <header>
+        <div class="header__title">
+            <picture >
+                <source srcset="assets/images/logo-bon-jovi.svg" type="image/svg+xml">
+                <img src="assets/images/logo-bon-jovi.png" alt="Logo de la web">
+            </picture>
+                 <h1><a href="index.html"> Living on a Bon Jovi's site <br>Un recorrido por la historia del rock</a>
+                 </h1>
+                 <picture class="header__logo">
+                     <source srcset="assets/images/logo-bon-jovi.svg" type="image/svg+xml">
+                     <img src="assets/images/logo-bon-jovi.png" alt="Logo de la web">
+                 </picture>
+            
+        </div>
+          
+        
+                <nav class="nav__header nav__header--index">
+                    <ul>
+                        <li><a href="categoria.html">Categoría</a> </li>
+                        <li> <a href="detalle.html">Detalle</a></li>
+                        <li><a href="enlaces.html">Enlaces</a></li>
+                        <li> <a href="presentacion.html">Presentacion</a></li>
+                    </ul>
+                </nav>
+            </header>
     <main class="category-main">
         <h2>Living on a Bon Jovi's site</h2>
+
+
+            
+
         <section class="category-main__content">
-            <h4>El contenido que cualquier fan de Bon Jovi debería ver</h4>
+
+            <div class="titulo-icono">
+                <h4>El contenido que cualquier fan de Bon Jovi debería ver</h4>            
+                <div class="microphone-container">
+                    <svg width="236" height="220" viewBox="0 0 236 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-animate" d="M213.65 20.8347C196.116 4.48937 168.526 2.31343 149.44 15.2797L144.819 10.9725L139.73 15.7128L136.305 18.9062L132.012 22.9109L136.519 27.1081C129.074 36.2897 126.242 47.7984 127.812 59.07L125.585 63.4253L116.079 74.3875L22.7482 181.95L19.6765 184.814L24.4666 189.279L7.375 209.536L11.2247 213.125L32.9662 197.192L37.7526 201.654L40.8206 198.794L156.203 111.791L167.958 102.936L172.641 100.86C184.729 102.317 197.071 99.6806 206.917 92.7472L211.426 96.9512L215.722 92.9466L219.152 89.7497L224.237 85.0094L219.613 80.6987C233.518 62.9028 231.18 37.1766 213.65 20.8347ZM42.1776 190.853C42.0939 190.933 41.994 190.996 41.8839 191.039C41.7737 191.082 41.6554 191.104 41.536 191.104C41.4166 191.104 41.2983 191.082 41.1881 191.039C41.078 190.996 40.9781 190.933 40.8944 190.853L31.2626 181.878C31.1786 181.8 31.112 181.707 31.0665 181.604C31.021 181.502 30.9976 181.392 30.9976 181.282C30.9976 181.058 31.0929 180.843 31.2626 180.685C31.4323 180.527 31.6624 180.438 31.9024 180.438C32.1424 180.438 32.3725 180.527 32.5422 180.685L42.1776 189.661C42.3467 189.819 42.4417 190.034 42.4417 190.257C42.4417 190.481 42.3467 190.695 42.1776 190.853ZM52.4363 179.726C51.2116 180.867 49.551 181.508 47.8195 181.508C46.088 181.508 44.4274 180.867 43.2027 179.726C42.3734 178.948 41.7881 177.973 41.5102 176.907L54.1288 176.901C53.8512 177.969 53.266 178.946 52.4363 179.726ZM41.5139 173.948C41.7904 172.917 42.3436 171.937 43.2027 171.129C43.8089 170.564 44.5286 170.115 45.3208 169.809C46.1129 169.503 46.962 169.346 47.8195 169.346C48.677 169.346 49.5261 169.503 50.3182 169.809C51.1104 170.115 51.8301 170.564 52.4363 171.129C53.2991 171.937 53.8522 172.92 54.1288 173.955L41.5139 173.948ZM61.6919 165.88C61.4531 166.102 61.1699 166.278 60.8582 166.398C60.5466 166.517 60.2127 166.579 59.8756 166.578C59.5385 166.578 59.2047 166.515 58.8935 166.395C58.5822 166.274 58.2995 166.097 58.0615 165.875C57.8235 165.652 57.6349 165.388 57.5063 165.098C57.3778 164.807 57.3119 164.496 57.3124 164.182C57.3129 163.867 57.3798 163.556 57.5093 163.266C57.6388 162.976 57.8283 162.712 58.0671 162.491C58.5492 162.043 59.2026 161.791 59.8834 161.792C60.5642 161.793 61.2167 162.046 61.6974 162.496C62.1781 162.945 62.4475 163.554 62.4465 164.189C62.4455 164.824 62.174 165.432 61.6919 165.88ZM92.1949 146.011L79.3698 134.052L105.625 109.581L118.454 121.54L92.1949 146.011ZM123.387 111.069C122.53 111.07 121.681 110.912 120.888 110.607C120.096 110.301 119.376 109.852 118.77 109.287C118.164 108.721 117.683 108.05 117.355 107.311C117.028 106.572 116.86 105.781 116.861 104.981C116.861 103.84 117.218 102.778 117.808 101.867L126.725 110.186C125.721 110.762 124.566 111.068 123.387 111.069ZM128.97 108.092L120.05 99.7769C121.031 99.2303 122.159 98.8969 123.384 98.8969C124.241 98.8964 125.09 99.0535 125.883 99.359C126.675 99.6646 127.395 100.113 128.001 100.678C128.608 101.243 129.089 101.914 129.417 102.652C129.745 103.39 129.914 104.182 129.914 104.981C129.914 106.123 129.557 107.181 128.97 108.092ZM156.464 107.257L120.943 74.1469L125.873 68.4681L162.552 102.671L156.464 107.257ZM177.45 94.4797L134.634 54.5703C134.321 46.8909 136.401 39.27 141.006 32.835L200.777 88.5534C193.87 92.8503 185.691 94.7719 177.45 94.4797ZM210.597 88.165L141.43 23.6844L144.856 20.4909L214.026 84.9716L210.597 88.165ZM214.424 75.8587L154.628 20.1162C170.827 9.8725 193.837 11.9178 208.528 25.6128C223.215 39.3044 225.413 60.7612 214.424 75.8587ZM209.081 129.821C206.721 117.779 194.578 115.469 194.578 115.469L171.845 154.619C171.166 150.085 167.342 145.3 161.457 142.326C153.009 138.06 143.506 139.171 140.243 144.794C136.976 150.422 141.176 158.434 149.628 162.704C158.083 166.963 167.578 165.859 170.842 160.232L188.984 128.992C190.906 128.965 193.767 130.034 197.698 134.231C205.932 143.031 217.113 144.024 217.113 144.024C217.113 144.024 211.128 140.284 209.081 129.821Z" fill="black"/>
+                        <path d="M47.7716 98.9966C61.8025 100.048 73.8238 93.3213 74.6276 83.9781L79.0784 32.1028C81.6265 31.0063 86.14 30.855 94.0829 34.32C110.702 41.5491 126.312 36.7228 126.312 36.7228C126.312 36.7228 115.909 35.0075 106.524 22.1238C95.7164 7.27719 77.9759 10.8831 77.9759 10.8831L72.393 75.9069C68.6059 70.1972 60.4455 65.8934 50.6662 65.1647C36.639 64.1197 24.6178 70.8469 23.8176 80.1934C23.0174 89.5331 33.7333 97.955 47.7716 98.9966ZM92.4382 139.807L86.0404 133.843L87.3237 132.646L93.7215 138.61L92.4382 139.807ZM94.8056 137.589L88.4041 131.622L89.6874 130.426L96.0852 136.393L94.8056 137.589ZM97.1767 135.382L90.7715 129.415L92.0547 128.219L98.4599 134.19L97.1767 135.382ZM100.842 131.972L99.5662 133.169L93.1499 127.205L94.4295 126.012L100.842 131.972Z" fill="black"/>
+                        <path d="M83.3375 133.708L92.5673 142.309L114.489 121.877L105.26 113.272L83.3375 133.708ZM92.5673 141.116L84.6244 133.712L94.3041 124.688L102.243 132.093L92.5673 141.116Z" fill="black"/>
+                        </svg>
+                </div>
+            </div>
             <p>Si has llegado hasta aquí es porque o bien eres un rockero nostalgico, o bien alguien te ha obligado, en caso de ser la segunda opción, se lo puedes agradecer a esa persona.</p>
             <p>Como habrás podido comprobar, y lanzando un guiño a una de las canciones más iconicas de nuestra banda favorita, <span lang="en">This ain't a regular website</span>. En esta página con aires un poco macarras podrás averiguar información interesante sobre ellos, especialmente el cantante y el anterior guitarrista, que a estas alturas todos sabemos de quien estamos hablando.</p>
             <img src="./assets/images/recorte-bonjovi.png" class="card-photo article-photo" alt="titular posible regreso Richie Sambora">
             <p>Seas absolutamente fan o no, es muy complicado encontrar a alguien que jamás haya cantando <span lang="en">"Livin on a prayer"</span> o <span lang="en">It's my life"</span></p>
-            <h4>Lo que has aprendido</h4>
+            
+            <div class="titulo-icono">
+                
+                <h4>Lo que has aprendido</h4>
+                <div class="notebook-container">
+                    <svg width="170" height="173" viewBox="0 0 170 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.25 0V10.8125H15.725C14.3724 10.8125 13.0752 11.3593 12.1187 12.3326C11.1623 13.3059 10.625 14.626 10.625 16.0025C10.5662 16.7177 10.6538 17.4376 10.8823 18.1166C11.1109 18.7956 11.4753 19.4189 11.9526 19.9473C12.4298 20.4757 13.0096 20.8976 13.6553 21.1864C14.301 21.4752 14.9985 21.6245 15.7037 21.625H21.25V32.4375H15.725C15.0552 32.4375 14.3921 32.5717 13.7733 32.8326C13.1545 33.0934 12.5923 33.4757 12.1187 33.9576C11.6452 34.4396 11.2695 35.0117 11.0132 35.6414C10.7569 36.2711 10.625 36.9459 10.625 37.6275C10.5662 38.3427 10.6538 39.0626 10.8823 39.7416C11.1109 40.4206 11.4753 41.0439 11.9526 41.5723C12.4298 42.1007 13.0096 42.5226 13.6553 42.8114C14.301 43.1002 14.9985 43.2495 15.7037 43.25H21.25V54.0625H15.725C14.3724 54.0625 13.0752 54.6093 12.1187 55.5826C11.1623 56.5559 10.625 57.876 10.625 59.2525C10.5662 59.9677 10.6538 60.6876 10.8823 61.3666C11.1109 62.0456 11.4753 62.6689 11.9526 63.1973C12.4298 63.7257 13.0096 64.1476 13.6553 64.4364C14.301 64.7252 14.9985 64.8745 15.7037 64.875H21.25V75.6875H15.725C14.3724 75.6875 13.0752 76.2343 12.1187 77.2076C11.1623 78.1809 10.625 79.501 10.625 80.8775C10.5662 81.5927 10.6538 82.3126 10.8823 82.9916C11.1109 83.6706 11.4753 84.2939 11.9526 84.8223C12.4298 85.3507 13.0096 85.7726 13.6553 86.0614C14.301 86.3502 14.9985 86.4995 15.7037 86.5H21.25V97.3125H15.725C14.3724 97.3125 13.0752 97.8593 12.1187 98.8326C11.1623 99.8059 10.625 101.126 10.625 102.502C10.625 103.879 11.1623 105.199 12.1187 106.172C13.0752 107.146 14.3724 107.693 15.725 107.693H21.25V118.505H15.725C14.3724 118.505 13.0752 119.052 12.1187 120.025C11.1623 120.998 10.625 122.319 10.625 123.695C10.625 125.071 11.1623 126.392 12.1187 127.365C13.0752 128.338 14.3724 128.885 15.725 128.885H21.25V139.698H15.725C14.3724 139.698 13.0752 140.244 12.1187 141.218C11.1623 142.191 10.625 143.511 10.625 144.887C10.625 146.264 11.1623 147.584 12.1187 148.557C13.0752 149.531 14.3724 150.078 15.725 150.078H21.25V171.703H148.75V0H21.25ZM37.1875 151.375C35.7785 151.375 34.4273 150.805 33.431 149.792C32.4347 148.778 31.875 147.403 31.875 145.969C31.875 144.535 32.4347 143.16 33.431 142.146C34.4273 141.132 35.7785 140.562 37.1875 140.562C38.5964 140.562 39.9477 141.132 40.944 142.146C41.9403 143.16 42.5 144.535 42.5 145.969C42.5 147.403 41.9403 148.778 40.944 149.792C39.9477 150.805 38.5964 151.375 37.1875 151.375ZM37.1875 129.75C35.7785 129.75 34.4273 129.18 33.431 128.167C32.4347 127.153 31.875 125.778 31.875 124.344C31.875 122.91 32.4347 121.535 33.431 120.521C34.4273 119.507 35.7785 118.938 37.1875 118.938C38.5964 118.938 39.9477 119.507 40.944 120.521C41.9403 121.535 42.5 122.91 42.5 124.344C42.5 125.778 41.9403 127.153 40.944 128.167C39.9477 129.18 38.5964 129.75 37.1875 129.75ZM37.1875 108.125C35.7785 108.125 34.4273 107.555 33.431 106.542C32.4347 105.528 31.875 104.153 31.875 102.719C31.875 101.285 32.4347 99.9098 33.431 98.8959C34.4273 97.8821 35.7785 97.3125 37.1875 97.3125C38.5964 97.3125 39.9477 97.8821 40.944 98.8959C41.9403 99.9098 42.5 101.285 42.5 102.719C42.5 104.153 41.9403 105.528 40.944 106.542C39.9477 107.555 38.5964 108.125 37.1875 108.125ZM37.1875 86.5C35.7785 86.5 34.4273 85.9304 33.431 84.9165C32.4347 83.9027 31.875 82.5276 31.875 81.0938C31.875 79.6599 32.4347 78.2848 33.431 77.271C34.4273 76.2571 35.7785 75.6875 37.1875 75.6875C38.5964 75.6875 39.9477 76.2571 40.944 77.271C41.9403 78.2848 42.5 79.6599 42.5 81.0938C42.5 82.5276 41.9403 83.9027 40.944 84.9165C39.9477 85.9304 38.5964 86.5 37.1875 86.5ZM37.1875 64.875C35.7785 64.875 34.4273 64.3054 33.431 63.2915C32.4347 62.2777 31.875 60.9026 31.875 59.4688C31.875 58.0349 32.4347 56.6598 33.431 55.646C34.4273 54.6321 35.7785 54.0625 37.1875 54.0625C38.5964 54.0625 39.9477 54.6321 40.944 55.646C41.9403 56.6598 42.5 58.0349 42.5 59.4688C42.5 60.9026 41.9403 62.2777 40.944 63.2915C39.9477 64.3054 38.5964 64.875 37.1875 64.875ZM37.1875 43.25C35.7785 43.25 34.4273 42.6804 33.431 41.6665C32.4347 40.6527 31.875 39.2776 31.875 37.8438C31.875 36.4099 32.4347 35.0348 33.431 34.021C34.4273 33.0071 35.7785 32.4375 37.1875 32.4375C38.5964 32.4375 39.9477 33.0071 40.944 34.021C41.9403 35.0348 42.5 36.4099 42.5 37.8438C42.5 39.2776 41.9403 40.6527 40.944 41.6665C39.9477 42.6804 38.5964 43.25 37.1875 43.25ZM37.1875 21.625C35.7785 21.625 34.4273 21.0554 33.431 20.0415C32.4347 19.0277 31.875 17.6526 31.875 16.2188C31.875 14.7849 32.4347 13.4098 33.431 12.396C34.4273 11.3821 35.7785 10.8125 37.1875 10.8125C38.5964 10.8125 39.9477 11.3821 40.944 12.396C41.9403 13.4098 42.5 14.7849 42.5 16.2188C42.5 17.6526 41.9403 19.0277 40.944 20.0415C39.9477 21.0554 38.5964 21.625 37.1875 21.625ZM127.5 64.875H63.75V32.4375H127.5V64.875Z" fill="black"/>
+                        </svg>
+                    
+                </div>
+            </div> 
+
             <p>Ahora ya sabes que la banda nació con 1983, en Nueva Jersey, que el nombre es por el cantante pero, sin embargo, son cinco miembros los que la componen aunque no siempre han permanecido los mismos integrantes o que su disco más vendido de todos los tiempos ha sido Slippery When Wet.</p>
             <img src="./assets/images/bon-jovi-band.jpg" class="card-photo article-photo" alt="Banda Bon Jovi">
             <p>Estamos orgullosos de haberte acompañado en este viaje por el recorrido de este peculiar grupo, que no sólo triunfa en conjunto, sino que también realizan éxitos en solitario como el álbum Blaze of Glory del vocalista, que sería un salto para la voz de Jon al cine. No obstante, otra canción perfecta para western, compuesta por Jon y Richie es la gran conocida Wanted Dead or Alive, cantada en directo en la gira This House Is Not For Sale (2019),con la que os dejamos para que la disfruteis.</p>
-            <div class="video-container">
-                <div class="video-responsive">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Nwfebfc80Uo?si=gUiP8Z61sy4nCM_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
+
 
             
         </section>
+
+        <div class="video-container">
+            <div class="video-responsive">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Nwfebfc80Uo?si=gUiP8Z61sy4nCM_M" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
     </main>
+    <footer>
+        <picture class="footer__logo">
+            <source srcset="assets/images/logo-bon-jovi.svg" type="image/svg+xml">
+            <img src="assets/images/logo-bon-jovi.png" alt="Logo de la web" class="footer__logo-img">
+          </picture>  <p>&copy; 2024 Living on a Bon Jovi's site. Todos los derechos reservados.</p>
+
+        <ul>
+            <li><a href="./categoria.html">Categoría</a></li>
+            <li><a href="./presentacion.html">Presentación</a></li>
+            <li><a href="./enlaces.html">Enlaces</a></li>
+        </ul>
+    </footer>
 
 </body>
 </html>

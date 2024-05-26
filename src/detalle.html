@@ -4,13 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Artículo sobre Bon Jovi y Richie Sambora, un inicio con un final.">
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo-bon-jovi.svg">
+    <link rel="alternate icon" type="image/png" href="assets/images/logo-bon-jovi.png">
     <title>Bon Jovi y Richie Sambora</title>
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
 </head>
 <body>
-    <include src="src/views/header.html"></include>
+    <header>
+        <div class="header__title">
+            <picture >
+                <source srcset="assets/images/logo-bon-jovi.svg" type="image/svg+xml">
+                <img src="assets/images/logo-bon-jovi.png" alt="Logo de la web">
+            </picture>
+                 <h1><a href="index.html"> Living on a Bon Jovi's site <br>Un recorrido por la historia del rock</a>
+                 </h1>
+                 <picture class="header__logo">
+                     <source srcset="assets/images/logo-bon-jovi.svg" type="image/svg+xml">
+                     <img src="assets/images/logo-bon-jovi.png" alt="Logo de la web">
+                 </picture>
+            
+        </div>
+          
+        
+                <nav class="nav__header nav__header--index">
+                    <ul>
+                        <li><a href="categoria.html">Categoría</a> </li>
+                        <li> <a href="detalle.html">Detalle</a></li>
+                        <li><a href="enlaces.html">Enlaces</a></li>
+                        <li> <a href="presentacion.html">Presentacion</a></li>
+                    </ul>
+                </nav>
+            </header>
     <main class="category-main">
         <h2>Jon y Richie</h2>
+       
+
+        <picture>
+            <source media="(max-width: 799px)" srcset="./assets/images/sambora-bonjovi-arte.jpg">
+            <source media="(min-width: 800px)" srcset="./assets/images/sambora-bonjovi-original.jpg">
+            <img src="./assets/images/sambora-bonjovi-original.jpg" alt="Richie Sambora y Bon Jovi en uno de sus últimos conciertos juntos" class="imagen-destacada ">
+          </picture>
+       
+        <hr>
         <section class= "article-format">
             <article>
                 <div>
@@ -30,23 +65,48 @@
                             </div>
                           </div>
                           <p> La conexión entre Jon Bon Jovi y Richie Sambora en el escenario era evidente para los espectadores. Su energía compartida contribuyó en gran medida al éxito en los conciertos en vivo de la banda. Esta conexión no sólo era palpable en el escenario ya que ambos compartían gustos musicales desde el rock clásico, el blues o el country.</p>
-                    </div>
 
+                        </div>
+                        <picture>
+                            <source srcset="./assets/images/historia-bon-jovi.webp" media="(min-width: 800px)">
+                            <source srcset="./assets/images/historia-bon-jovi-min.webp" media="(max-width: 799px)">
+                            <img src="./assets/images/historia-bon-jovi-min.webp"  alt="Banda Bon Jovi de los años ochenta con una señal de Slippery When Wet de fondo." class="card-photo article-photo">
+                          </picture>
                 </div>
             </article>
             <article>
                 <div>
-                    <img src="./assets/images/bon-jovi-sambora-young-japan.jpg" alt="Bon Jovi y Richie Sambora jóvenes" class="card-photo article-photo">
+                    <picture>
+                        <source srcset="./assets/images/bon-jovi-sambora-young-japan.jpg" media="(min-width: 800px)">
+                        <source srcset="./assets/images/bon-jovi-sambora-young-japan-min.jpg" media="(max-width: 799px)">
+                        <img src="./assets/images/bon-jovi-sambora-young-japan-min.jpg"  alt="Bon Jovi y Richie Sambora jóvenes" class="card-photo article-photo">
+                      </picture>
                     <div class="mosaic-content">
                         <h3 class="card-title">Sambora dice adiós</h3>
                         <p>El 2 de abril de 2013, estando en plena gira "Because We Can", Richie Sambora no apareció en los escensarios. Fue una acción sin previo aviso, lo que provocó el descontento del cantante, Jon Bon Jovi, y desde entonces no se les ha vuelto a ver juntos. Sin embargo, el cantante no cierra la puerta a que algún día se puedan unir para repetir algún concierto.</p>
                         <p>Tras abandonar el grupo, Sambora siguió su carrera musical en solitario para posteriormente trabajar con Orianthi Panagaris, una joven que había estado de gira con Alice Cooper. Para Richie no era algo nuevo estar desenlazado a la banda ya que, incluso en los tiempos en los que pertenecía a Bon Jovi, lanzó varios álbumes en solitario, como "Stranger in This Town” (1991) y “Aftermath of the Lowdown” (2012).</p>
                     </div>
+                    <picture>
+                        <source srcset="./assets/images/bon-jovi-sambora-singing.webp" media="(min-width: 800px)">
+                        <source srcset="./assets/images/bon-jovi-sambora-singing-min.webp" media="(max-width: 799px)">
+                        <img src="./assets/images/bon-jovi-sambora-singing-min.webp"  alt="Bon Jovi y Richie Sambora cantando en un concierto" class="card-photo article-photo">
+                      </picture>
                 </div>
             </article>
         </section>
     </main>
+    <footer>
+        <picture class="footer__logo">
+            <source srcset="assets/images/logo-bon-jovi.svg" type="image/svg+xml">
+            <img src="assets/images/logo-bon-jovi.png" alt="Logo de la web" class="footer__logo-img">
+          </picture>  <p>&copy; 2024 Living on a Bon Jovi's site. Todos los derechos reservados.</p>
 
+        <ul>
+            <li><a href="./categoria.html">Categoría</a></li>
+            <li><a href="./presentacion.html">Presentación</a></li>
+            <li><a href="./enlaces.html">Enlaces</a></li>
+        </ul>
+    </footer>
     <script type="module" src="./assets/scripts/app.js"></script>
 </body>
 </html>

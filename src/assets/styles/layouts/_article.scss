@@ -27,3 +27,21 @@ article {
         width: 80%;
     }
 }
+
+.imagen-destacada {
+    display: flex;
+    margin: 0 auto;
+    margin-block: 3em;
+    width: 100%;
+    padding: 1em;
+
+    @media screen and (min-width: 768px) {
+        width: 70%;
+      }
+}
+
+
+hr {
+    border: 1px solid;
+    margin-bottom: 3em;
+}

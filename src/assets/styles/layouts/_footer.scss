@@ -1,25 +1,44 @@
 footer {
-    background-color: #ffc60b;
+    background-color: $color-background;
     justify-content: center;
     margin-top: 4em;
     padding: 1em;
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
   
       }
 }
 
 footer ul {
     display:flex;
+    justify-content: space-evenly;
     list-style: none;
 
     @media screen and (min-width: 768px) {
         flex-direction: column;
   
       }
+}
+
+footer ul li  {
+  width: 100%;
+  text-align: center;
+}
+
+.footer__logo {
+  max-width: 100px; 
+  width: 100%;
+  height: auto;
+}
+
+.footer__logo-img {
+  width: 100%;
+  height: auto;
 }
