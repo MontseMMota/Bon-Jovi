@@ -31,5 +31,8 @@
     "posthtml-include": "^2.0.1",
     "rimraf": "^5.0.7",
     "sass": "^1.75.0"
+  },
+  "dependencies": {
+    "lite-youtube-embed": "^0.3.2"
   }
 }
